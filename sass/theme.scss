@@ -1,0 +1,211 @@
+//@import "compass/reset";
+@import "compass/css3";
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/avenir/Avenir LT 35 Light.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir LT 35 Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir LT 35 Light.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir LT 35 Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir LT 35 Light.svg#697d3d7fc6be44b3bbaa147a0371d58a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/avenir/avenir_lt_55_roman-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/avenir_lt_55_roman-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/avenir_lt_55_roman-webfont.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/avenir_lt_55_roman-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/avenir_lt_55_roman-webfont.svg#1c332efc644bd530815000612bdd0959') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/avenir/avenir_lt_85_heavy-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/avenir_lt_85_heavy-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/avenir_lt_85_heavy-webfont.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/avenir_lt_85_heavy-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/avenir_lt_85_heavy-webfont.svg#f1b7f59aa61f744557cf2e39a9c226ae') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+	font-family: 'liquidweb-glyphs';
+	src:url('fonts/glyphs/liquidweb-glyphs.eot?leaom');
+	src:url('fonts/glyphs/liquidweb-glyphs.eot?#iefixleaom') format('embedded-opentype'),
+		url('fonts/glyphs/liquidweb-glyphs.woff?leaom') format('woff'),
+		url('fonts/glyphs/liquidweb-glyphs.ttf?leaom') format('truetype'),
+		url('fonts/glyphs/liquidweb-glyphs.svg?leaom#liquidweb-glyphs') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.glyph {
+	font-family: 'liquidweb-glyphs';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: "Avenir", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	background: url(img/bg.png);
+}
+
+// typography {
+
+.thin {
+	font-weight: 200;
+}
+.regular {
+	font-weight: 400;
+}
+.heavy {
+	font-weight: 700;
+}
+
+//input 
+
+input {
+	padding: 1.3em 1em;
+	background: #f4f0f0;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+	border: 0;
+	border-radius: 3px;
+	outline: none;
+}
+
+// Buttons
+.bttn {
+    /* Structure */
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    font-family: inherit;
+    font-size: 100%;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 01em 1.8em;
+    color: #fff;
+    border: 1px solid #777;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, .4);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    border-radius: 2px;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &.filter {
+    	padding: 01em 1em;
+    	.count {
+    		background: rgba(255,255,255, .5);
+    		padding: 2px 6px;
+    		display: inline;
+    		font-size: .9em;
+    		border-radius: 3px;
+    	}
+    	.delete {
+    		padding-right: .6em;
+    		&:hover {
+    			color: #FF6666;
+    		}
+    	}
+    	.arrow {
+    		padding-left: 1em;
+    	}
+    }
+    &.blue {
+    	background: #536ca9;
+    	@include background-image(linear-gradient(lighten(#536ca9, 7%),darken(#536ca9, 5%)));
+    	box-shadow: 0 1px 0 rgba(255,255,255, .2);
+    	border: 1px solid darken(#536ca9, 5%);
+    	.count {
+    		color: #536ca9;
+    	}
+    }
+    &.green {
+    	background: #a0ca66;
+    	@include background-image(linear-gradient(lighten(#a0ca66, 7%),darken(#a0ca66, 5%)));
+    	box-shadow: 0 1px 0 rgba(255,255,255, .2);
+    	border: 1px solid darken(#a0ca66, 5%);
+    	.count {
+    		color: #a0ca66;
+    	}
+    }
+    &:hover, &:focus {
+    	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+	    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+	    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+	    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+	    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    }
+    &:focus {
+    	outline: 0;
+    }
+    &.active {
+    	box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    }
+    &::-moz-focus-inner {
+	    padding: 0;
+	    border: 0;
+	}
+	span {
+		vertical-align: middle;
+	}
+}
+
+// Grid
+
+.grid-item {
+	background: #fff;
+	border: 1px solid #e5e6e7;
+	padding: 15px;
+	.grid-header {
+		padding-bottom: 20px;
+	}
+	.grid-icon {
+		color: #a1a4aa;
+		font-size: 1.2em;
+		position: relative;
+		top: 2px;
+	}
+	.grid-title {
+		text-transform: uppercase;
+		font-size: .9em;
+		color: #2c3031;
+		vertical-align: top;
+		position: relative;
+		top: 1px;
+	}
+	.grid-menu {
+		color: #536ca9;
+		float: right;
+		font-size: 1.2em;
+		cursor: pointer;
+	}
+}
