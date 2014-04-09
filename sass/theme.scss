@@ -1,5 +1,6 @@
 //@import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities/color/contrast";
 
 @font-face {
   font-family: 'Avenir';
@@ -177,6 +178,30 @@ input {
 	span {
 		vertical-align: middle;
 	}
+}
+
+//Filters
+// These must match colors to array positions
+$networks: facebook, twitter, youtube, forums, google, tumblr;
+$custom-color: #3B5999, #4099FF, #cd201f, #999, #d34836, #32506d;
+
+@each $network in $networks {
+  $i: index($networks, $network);
+  .#{$network} {
+    .bttn.custom-bttn {
+      background: nth($custom-color, $i);
+      @include background-image(linear-gradient(lighten(nth($custom-color, $i), 7%),darken(nth($custom-color, $i), 5%)));
+      box-shadow: 0 1px 0 rgba(255,255,255, .2);
+      border: 1px solid darken(nth($custom-color, $i), 5%);
+      .count {
+        color: nth($custom-color, $i);
+      }
+    }
+    .custom-bg {
+      @include contrasted(nth($custom-color, $i));
+    }
+  }
+
 }
 
 // Grid

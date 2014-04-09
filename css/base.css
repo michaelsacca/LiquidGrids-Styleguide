@@ -13,11 +13,13 @@ LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt
   src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
   unicode-range: U+0026;
 }
+
 @font-face {
   font-family: "Ampersand";
   src: local("Georgia");
   unicode-range: U+270C;
 }
+
 body {
   word-wrap: break-word;
 }
@@ -175,7 +177,7 @@ abbr {
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
-  color: grey;
+  color: gray;
 }
 abbr[title]:hover {
   cursor: help;
@@ -378,7 +380,7 @@ pre[class*="language-"] {
   background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(69, 142, 209, 0.04) 50%);
+  background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-size: 3em 3em;
   background-origin: content-box;
   overflow: visible;

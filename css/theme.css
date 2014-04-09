@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: 200;
 }
+
 @font-face {
   font-family: 'Avenir';
   src: url("fonts/avenir/avenir_lt_55_roman-webfont.eot");
@@ -16,6 +17,7 @@
   font-style: normal;
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'Avenir';
   src: url("fonts/avenir/avenir_lt_85_heavy-webfont.eot");
@@ -25,6 +27,7 @@
   font-style: normal;
   font-weight: 700;
 }
+
 @font-face {
   font-family: 'liquidweb-glyphs';
   src: url("fonts/glyphs/liquidweb-glyphs.eot?leaom");
@@ -32,6 +35,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .glyph {
   font-family: 'liquidweb-glyphs';
   speak: none;
@@ -126,9 +130,10 @@ input {
 }
 .bttn.blue {
   background: #536ca9;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6a80b6), color-stop(100%, #4b6198));
+  background-image: -webkit-linear-gradient(#6a80b6, #4b6198);
   background-image: -moz-linear-gradient(#6a80b6, #4b6198);
   background-image: -o-linear-gradient(#6a80b6, #4b6198);
-  background-image: -webkit-linear-gradient(#6a80b6, #4b6198);
   background-image: linear-gradient(#6a80b6, #4b6198);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   border: 1px solid #4b6198;
@@ -138,9 +143,10 @@ input {
 }
 .bttn.green {
   background: #a0ca66;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b0d381), color-stop(100%, #94c353));
+  background-image: -webkit-linear-gradient(#b0d381, #94c353);
   background-image: -moz-linear-gradient(#b0d381, #94c353);
   background-image: -o-linear-gradient(#b0d381, #94c353);
-  background-image: -webkit-linear-gradient(#b0d381, #94c353);
   background-image: linear-gradient(#b0d381, #94c353);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   border: 1px solid #94c353;
@@ -154,7 +160,7 @@ input {
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1));
   background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 .bttn:focus {
   outline: 0;
@@ -168,6 +174,114 @@ input {
 }
 .bttn span {
   vertical-align: middle;
+}
+
+.facebook .bttn.custom-bttn {
+  background: #3b5999;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4568b3), color-stop(100%, #344e87));
+  background-image: -webkit-linear-gradient(#4568b3, #344e87);
+  background-image: -moz-linear-gradient(#4568b3, #344e87);
+  background-image: -o-linear-gradient(#4568b3, #344e87);
+  background-image: linear-gradient(#4568b3, #344e87);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #344e87;
+}
+.facebook .bttn.custom-bttn .count {
+  color: #3b5999;
+}
+.facebook .custom-bg {
+  background-color: #3b5999;
+  color: black;
+}
+
+.twitter .bttn.custom-bttn {
+  background: #4099ff;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #64acff), color-stop(100%, #268bff));
+  background-image: -webkit-linear-gradient(#64acff, #268bff);
+  background-image: -moz-linear-gradient(#64acff, #268bff);
+  background-image: -o-linear-gradient(#64acff, #268bff);
+  background-image: linear-gradient(#64acff, #268bff);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #268bff;
+}
+.twitter .bttn.custom-bttn .count {
+  color: #4099ff;
+}
+.twitter .custom-bg {
+  background-color: #4099ff;
+  color: black;
+}
+
+.youtube .bttn.custom-bttn {
+  background: #cd201f;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e03130), color-stop(100%, #b71d1c));
+  background-image: -webkit-linear-gradient(#e03130, #b71d1c);
+  background-image: -moz-linear-gradient(#e03130, #b71d1c);
+  background-image: -o-linear-gradient(#e03130, #b71d1c);
+  background-image: linear-gradient(#e03130, #b71d1c);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #b71d1c;
+}
+.youtube .bttn.custom-bttn .count {
+  color: #cd201f;
+}
+.youtube .custom-bg {
+  background-color: #cd201f;
+  color: black;
+}
+
+.forums .bttn.custom-bttn {
+  background: #999999;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ababab), color-stop(100%, #8c8c8c));
+  background-image: -webkit-linear-gradient(#ababab, #8c8c8c);
+  background-image: -moz-linear-gradient(#ababab, #8c8c8c);
+  background-image: -o-linear-gradient(#ababab, #8c8c8c);
+  background-image: linear-gradient(#ababab, #8c8c8c);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #8c8c8c;
+}
+.forums .bttn.custom-bttn .count {
+  color: #999999;
+}
+.forums .custom-bg {
+  background-color: #999999;
+  color: black;
+}
+
+.google .bttn.custom-bttn {
+  background: #d34836;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d96353), color-stop(100%, #c43d2b));
+  background-image: -webkit-linear-gradient(#d96353, #c43d2b);
+  background-image: -moz-linear-gradient(#d96353, #c43d2b);
+  background-image: -o-linear-gradient(#d96353, #c43d2b);
+  background-image: linear-gradient(#d96353, #c43d2b);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #c43d2b;
+}
+.google .bttn.custom-bttn .count {
+  color: #d34836;
+}
+.google .custom-bg {
+  background-color: #d34836;
+  color: black;
+}
+
+.tumblr .bttn.custom-bttn {
+  background: #32506d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3d6285), color-stop(100%, #2a435c));
+  background-image: -webkit-linear-gradient(#3d6285, #2a435c);
+  background-image: -moz-linear-gradient(#3d6285, #2a435c);
+  background-image: -o-linear-gradient(#3d6285, #2a435c);
+  background-image: linear-gradient(#3d6285, #2a435c);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid #2a435c;
+}
+.tumblr .bttn.custom-bttn .count {
+  color: #32506d;
+}
+.tumblr .custom-bg {
+  background-color: #32506d;
+  color: black;
 }
 
 .grid-item {
