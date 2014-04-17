@@ -199,6 +199,11 @@ $custom-color: #3B5999, #4099FF, #cd201f, #999, #d34836, #32506d;
     }
     .custom-bg {
       @include contrasted(nth($custom-color, $i));
+      &.social-icon {
+          background-image: url(img/#{$network}.png);
+          background-position: center center;
+          background-repeat: no-repeat;
+      }
     }
   }
 

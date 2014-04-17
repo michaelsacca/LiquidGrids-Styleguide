@@ -56,4 +56,13 @@ body {
 		width: 300px;
 		height: 300px;
 	}
+	.custom-bg {
+		width: 100%;
+		padding: 10px;
+		border-radius: 3px;
+		box-sizing: border-box;
+		.custom-bttn {
+			font-size: .8em;
+		}
+	}
 }

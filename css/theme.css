@@ -193,6 +193,11 @@ input {
   background-color: #3b5999;
   color: black;
 }
+.facebook .custom-bg.social-icon {
+  background-image: url(img/facebook.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 .twitter .bttn.custom-bttn {
   background: #4099ff;
@@ -210,6 +215,11 @@ input {
 .twitter .custom-bg {
   background-color: #4099ff;
   color: black;
+}
+.twitter .custom-bg.social-icon {
+  background-image: url(img/twitter.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .youtube .bttn.custom-bttn {
@@ -229,6 +239,11 @@ input {
   background-color: #cd201f;
   color: black;
 }
+.youtube .custom-bg.social-icon {
+  background-image: url(img/youtube.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 .forums .bttn.custom-bttn {
   background: #999999;
@@ -246,6 +261,11 @@ input {
 .forums .custom-bg {
   background-color: #999999;
   color: black;
+}
+.forums .custom-bg.social-icon {
+  background-image: url(img/forums.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .google .bttn.custom-bttn {
@@ -265,6 +285,11 @@ input {
   background-color: #d34836;
   color: black;
 }
+.google .custom-bg.social-icon {
+  background-image: url(img/google.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 .tumblr .bttn.custom-bttn {
   background: #32506d;
@@ -282,6 +307,11 @@ input {
 .tumblr .custom-bg {
   background-color: #32506d;
   color: black;
+}
+.tumblr .custom-bg.social-icon {
+  background-image: url(img/tumblr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .grid-item {
